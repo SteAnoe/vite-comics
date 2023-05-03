@@ -5,20 +5,25 @@
 }
 
 header{
-    margin-top: 20px;
     text-align: center;
     background-color: white;
     color: black;
+    height: 150px;
     .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-size: 13px;
+        div{
+            img{
+                width: 80%;
+            }
+        }
         nav{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 109px;
+            height: 150px;
             ul{
                 justify-content: center;
                 align-items: center;
@@ -30,42 +35,147 @@ header{
                     display: flex;
                     list-style-type: none;
                     height: 100%;
-                    
                     a{
-
                         text-decoration: none;
-                        
                         padding: 15px;
-                        
                         &:hover{
-                            color: #1480ED;
-                            
-                        } 
-
+                            color: #1480ED; 
+                        }
                     }
                 }
             }
         }
-    }
-        
+    }       
 }
 
 main{
     #content{
+        position: relative;
+        z-index: 99;
         background-color: #1C1C1C;
         color: white;
-        height: 100px;
+        height: 150px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     #shop{
+        position: relative;
+        z-index: 99;
         background-color: #0282F9;
+        color: white;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 50px;
+            div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 20%;
+                img{
+                    width: 20%;
+                    margin-right: 30px;
+                }
+                div{
+                    width: 90%;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    #about{
+        background-image: url('/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        color: white;
+        display: flex;
+        align-items: center;
+       
+        .container{
+            
+            height: 80%;
+            .box{
+                
+                
+                
+                position: relative;
+                height: 80%;
+                .col{
+                    
+                    display: flex;
+                    position: relative;
+                    
+                    div{
+                        h2{
+                            font-size: 20px; 
+                            margin-bottom: 15px;   
+                        }
+                        margin-right: 20px;
+                        ul{
+                            li{
+                                list-style-type: none;
+                                text-decoration: none; 
+                                font-size: 14px;
+                                margin-bottom: 7px;
+                                color: gray;
+                            }
+                        } 
+                    }
+                }
+            }   
+            img{
+                position: absolute;
+                right: 50px;
+                bottom: -80px;
+                z-index: 1;
+                width: 37%;
+            }
+        }
+    }
+    #links{
+        position: relative;
+        z-index: 99;
+        background-color: #303030;
         color: white;
         height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 13px;
+        
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            #button{
+                font-size: 20px;
+                border: 2px solid #1480ED;
+                padding: 10px;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 30%;
+                strong{
+                    color: #1480ED;
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
     }
 }
 
@@ -73,6 +183,7 @@ main{
 .active{
     border-bottom: 3px solid #1480ED;
 }
+
 .active-bg{
     color: #1480ED;
 }
@@ -81,3 +192,9 @@ main{
     width: 80%;
     margin: 0 auto;
 }
+
+.culo{
+    position: absolute;
+    bottom: -20px;
+}
+

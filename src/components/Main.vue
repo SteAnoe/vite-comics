@@ -36,14 +36,14 @@
   <main>
     <div id="content">
         <div class="container">
-            Content goes Here
+            Content goes here
         </div>  
     </div>
     <div id="shop">
         <div class="container">
-            <div v-for="(elem, index) in menuShop">
-                <img src="" alt="">
-
+            <div v-for="(elem, index) in menuShop" :key="index">
+                <img :src="elem.img" alt="">
+                <div>{{ elem.nome }}</div>
             </div>
         </div>
     </div>
