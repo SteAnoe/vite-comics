@@ -5,7 +5,7 @@
             return {
                 abuotList: [
                     {
-                        culo: false,
+                        position: false,
                         title: 'DC COMICS',
                         items: [
                             {
@@ -33,7 +33,7 @@
                         ]
                     },
                     {
-                        culo: true,
+                        position: true,
                         title: 'SHOP',
                         items: [
                             {
@@ -45,7 +45,7 @@
                         ]
                     },
                     {
-                        culo: false,
+                        position: false,
                         title: 'DC',
                         items: [
                             {
@@ -84,7 +84,7 @@
                         ]
                     },
                     {
-                        culo: false,
+                        position: false,
                         title:'SITIES',
                         items:[
                             {
@@ -119,7 +119,7 @@
             <div class="container">
                 <div class="box">
                     <div class="col">
-                        <div v-for="(elem, index) in abuotList" :key="index" :class="(elem.culo == true) ? 'culo' : 'merda' ">
+                        <div v-for="(elem, index) in abuotList" :key="index" :class="(elem.position == true) ? 'position' : '' ">
                             <h2>{{elem.title}}</h2>
                             <ul>
                                 <li v-for="(element, i) in elem.items" :key="i">{{ element.item }}</li>
